@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Formulario</title>
+  </head>
+
+  <body>
+    <header><h1>Formulario</h1></header>
+    <main>
+      <form name="form" action="#" method="get" id="contact-form" class="contact-form">
+        <fieldset>
+          <legend>Datos obligatorios</legend>
+          <label for="name">Nombre:</label>
+          <input id="name" name="name" type="text" autofocus required />
+          <label for="email">Correo electrónico:</label>
+          <input id="email" name="email" type="email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos web</legend>
+            <label for="web">URL</label>
+            <input id="web" name="web personal" type="url" placeholder="Escribe la URL de tu página web personal" size="40"/>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos tiempo</legend>
+            <label for="date">Fecha</label>
+            <input id="date" name="fecha" type="date" />
+            <label for="time">Tiempo</label>
+            <input id="time" name="tiempo" type="time" />
+            <label for="datetime">Fecha y hora</label>
+            <input id="datetime" name="fecha_y_hora" type="datetime-local" />
+            <label for="month">Mes</label>
+            <input id="month" name="mes" type="month" />
+            <label for="week">Semana</label>
+            <input id="week" name="semana" type="week" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros datos</legend>
+            <label for="num">Número</label>
+            <input id="num" name="numero" type="number" min="-10" max="10" />
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" value="666666666" />
+            <label for="busqueda">Término de búsqueda</label>
+            <input id="busqueda" name="busqueda" type="search" />
+            <label for="color">Color favorito</label>
+            <input id="color" name="color" type="color" />
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
